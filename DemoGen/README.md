@@ -208,6 +208,22 @@ fully synthetic generation process. This enables DemoGen to generate real-world 
 - Spatial generalization: ability of a policy to
 perform tasks involving objects placed in configurations that were not seen during training. 
 
+#### Visualization of Spatial Effective Range
+
+- We evaluate a Button-Large task adapted from the
+MetaWorld benchmark, where the robot approaches a button and presses it down.
+
+- We adopt 3D Diffusion Policy (DP3) [59] as the studied policy, as our benchmarking results indicate that 3D observations provide superior spatial generalization compared to 2D approaches.
+
+- Thus, to train a policy that generalizes well across the entire object randomization range, demonstrations must cover the full workspace,
+resulting in substantial data collection costs. 
+
+- as task precision requirements increase, the effective range shrinks to more localized areas, necessitating a greater number of demonstrations to adequately cover the workspace.
+
+#### Benchmarking Spatial Generalization Capabilitty
+
+- 
+
 ### Section 4.
 
 -
